@@ -1,0 +1,31 @@
+extends _layout
+include tailwind/_mixins
+block body
+  .max-w-7xl.mx-auto.px-2(class='sm_px-6 lg_px-8')
+    +table()
+      +thead()
+        tr
+          th.px-6.py-3.text-left.text-xs.font-medium.text-gray-500.uppercase.tracking-wider(scope='col')
+            | Name
+          th.px-6.py-3.text-left.text-xs.font-medium.text-gray-500.uppercase.tracking-wider(scope='col')
+            | Title
+          th.px-6.py-3.text-left.text-xs.font-medium.text-gray-500.uppercase.tracking-wider(scope='col')
+            | Status
+          th.px-6.py-3.text-left.text-xs.font-medium.text-gray-500.uppercase.tracking-wider(scope='col')
+            | Role
+          th.relative.px-6.py-3(scope='col')
+            span.sr-only Edit
+      +tbody()
+        tr
+          td.px-6.py-4.whitespace-nowrap
+            +user-card('Jane Cooper', 'jane.cooper@example.com','https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60')
+          td.px-6.py-4.whitespace-nowrap
+            .text-sm.text-gray-900 Regional Paradigm Technician
+            .text-sm.text-gray-500 Optimization
+          td.px-6.py-4.whitespace-nowrap
+            +badge-green('Active')
+          td.px-6.py-4.whitespace-nowrap.text-sm.text-gray-500
+            | Admin
+          td.px-6.py-4.whitespace-nowrap.text-right.text-sm.font-medium
+            a.text-indigo-600(href='#' class='hover:text-indigo-900') Edit
+

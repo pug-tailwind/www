@@ -1,0 +1,121 @@
+//- Generic button
+mixin btn(size='sm', color='gray')
+  button.inline-flex.justify-center.py-2.px-4.border.border-transparent.shadow-sm.font-medium.rounded-md.text-white(
+    type='button' 
+    class='hover_bg-' + color + '-700 focus_outline-none focus_ring-2 focus_ring-offset-2 focus_ring-' + color + '-500 text-' + size + ' bg-' + color + '-600')&attributes(attributes)
+    block
+
+//- Generic Round button
+mixin btn-round(size='sm', color='gray')
+  button.inline-flex.justify-center.py-2.px-4.border.border-transparent.shadow-sm.font-medium.rounded-full.text-white(
+    type='button' 
+    class='hover_bg-' + color + '-700 focus_outline-none focus_ring-2 focus_ring-offset-2 focus_ring-' + color + '-500 text-' + size + ' bg-' + color + '-600')&attributes(attributes)
+    block
+
+//- Generic Light button
+mixin btn-light(size='sm', color='gray')
+  button.inline-flex.justify-center.py-2.px-4.border.border-transparent.shadow-sm.font-bold.rounded-md(
+    type='button' 
+    class='hover_bg-' + color + '-700 hover_text-white focus_outline-none focus_ring-2 focus_ring-offset-2 focus_ring-' + color + '-500 text-' 
+    + size + ' bg-' + color + '-100 text-' + color + '-600 ')&attributes(attributes)
+    block
+
+//- Generic Outline button
+mixin btn-outline(size='sm', color='gray')
+  button.inline-flex.justify-center.py-2.px-4.border.border-transparent.shadow-sm.font-bold.rounded-md(
+    type='button' 
+    class='hover_bg-' + color + '-700 hover_text-white focus_outline-none focus_ring-2 focus_ring-offset-2 focus_ring-' + color + '-500 text-' 
+    + size + '  text-' + color + '-600 border-' + color + '-300')&attributes(attributes)
+    block
+//- Small buttons
+mixin btn-gray()
+  button.inline-flex.justify-center.py-2.px-4.border.border-transparent.shadow-sm.text-sm.font-medium.rounded-md.text-white.bg-gray-600(
+    type='button' 
+    class='hover_bg-gray-700 focus_outline-none focus_ring-2 focus_ring-offset-2 focus_ring-gray-500')&attributes(attributes)
+    block
+
+mixin btn-red()
+  button.inline-flex.justify-center.py-2.px-4.border.border-transparent.shadow-sm.text-sm.font-medium.rounded-md.text-white.bg-red-600(
+    type='button' 
+    class='hover_bg-red-700 focus_outline-none focus_ring-2 focus_ring-offset-2 focus_ring-red-500')&attributes(attributes)
+    block
+
+mixin btn-yellow()
+  button.inline-flex.justify-center.py-2.px-4.border.border-transparent.shadow-sm.text-sm.font-medium.rounded-md.text-white.bg-yellow-600(
+    type='button' 
+    class='hover_bg-yellow-700 focus_outline-none focus_ring-2 focus_ring-offset-2 focus_ring-yellow-500')&attributes(attributes)
+    block
+
+mixin btn-green()
+  button.inline-flex.justify-center.py-2.px-4.border.border-transparent.shadow-sm.text-sm.font-medium.rounded-md.text-white.bg-green-600(
+    type='button' 
+    class='hover_bg-green-700 focus_outline-none focus_ring-2 focus_ring-offset-2 focus_ring-green-500')&attributes(attributes)
+    block
+
+mixin btn-blue()
+  button.inline-flex.justify-center.py-2.px-4.border.border-transparent.shadow-sm.text-sm.font-medium.rounded-md.text-white.bg-blue-600(
+    type='button' 
+    class='hover_bg-blue-700 focus_outline-none focus_ring-2 focus_ring-offset-2 focus_ring-blue-500')&attributes(attributes)
+    block
+
+mixin btn-indigo()
+  button.inline-flex.justify-center.py-2.px-4.border.border-transparent.shadow-sm.text-sm.font-medium.rounded-md.text-white.bg-indigo-600(
+    type='button' 
+    class='hover_bg-indigo-700 focus_outline-none focus_ring-2 focus_ring-offset-2 focus_ring-indigo-500')&attributes(attributes)
+    block
+
+mixin btn-purple()
+  button.inline-flex.justify-center.py-2.px-4.border.border-transparent.shadow-sm.text-sm.font-medium.rounded-md.text-white.bg-purple-600(
+    type='button' 
+    class='hover_bg-purple-700 focus_outline-none focus_ring-2 focus_ring-offset-2 focus_ring-purple-500')&attributes(attributes)
+    block
+
+mixin btn-pink()
+  button.inline-flex.justify-center.py-2.px-4.border.border-transparent.shadow-sm.text-sm.font-medium.rounded-md.text-white.bg-pink-600(
+    type='button' 
+    class='hover_bg-pink-700 focus_outline-none focus_ring-2 focus_ring-offset-2 focus_ring-pink-500')&attributes(attributes)
+    block
+
+//- Large buttons
+mixin btn-lg-gray()
+  button.inline-flex.justify-center.py-2.px-4.border.border-transparent.shadow-sm.text-lg.font-medium.rounded-md.text-white.bg-gray-600(
+    type='button' 
+    class='hover_bg-gray-700 focus_outline-none focus_ring-2 focus_ring-offset-2 focus_ring-gray-500')&attributes(attributes)
+    block
+mixin btn-lg-red()
+  button.inline-flex.justify-center.py-2.px-4.border.border-transparent.shadow-sm.text-lg.font-medium.rounded-md.text-white.bg-red-600(
+    type='button' 
+    class='hover_bg-red-700 focus_outline-none focus_ring-2 focus_ring-offset-2 focus_ring-red-500')&attributes(attributes)
+    block
+mixin btn-lg-green()
+  button.inline-flex.justify-center.py-2.px-4.border.border-transparent.shadow-sm.text-lg.font-medium.rounded-md.text-white.bg-green-600(
+    type='button' 
+    class='hover_bg-green-700 focus_outline-none focus_ring-2 focus_ring-offset-2 focus_ring-green-500')&attributes(attributes)
+    block
+mixin btn-lg-yellow()
+  button.inline-flex.justify-center.py-2.px-4.border.border-transparent.shadow-sm.text-lg.font-medium.rounded-md.text-white.bg-yellow-600(
+    type='button' 
+    class='hover_bg-yellow-700 focus_outline-none focus_ring-2 focus_ring-offset-2 focus_ring-yellow-500')&attributes(attributes)
+    block
+mixin btn-lg-blue()
+  button.inline-flex.justify-center.py-2.px-4.border.border-transparent.shadow-sm.text-lg.font-medium.rounded-md.text-white.bg-blue-600(
+    type='button' 
+    class='hover_bg-blue-700 focus_outline-none focus_ring-2 focus_ring-offset-2 focus_ring-blue-500')&attributes(attributes)
+    block
+mixin btn-lg-indigo()
+  button.inline-flex.justify-center.py-2.px-4.border.border-transparent.shadow-sm.text-lg.font-medium.rounded-md.text-white.bg-indigo-600(
+    type='button' 
+    class='hover_bg-indigo-700 focus_outline-none focus_ring-2 focus_ring-offset-2 focus_ring-indigo-500')&attributes(attributes)
+    block
+mixin btn-lg-purple()
+  button.inline-flex.justify-center.py-2.px-4.border.border-transparent.shadow-sm.text-lg.font-medium.rounded-md.text-white.bg-purple-600(
+    type='button' 
+    class='hover_bg-purple-700 focus_outline-none focus_ring-2 focus_ring-offset-2 focus_ring-purple-500')&attributes(attributes)
+    block
+mixin btn-lg-pink()
+  button.inline-flex.justify-center.py-2.px-4.border.border-transparent.shadow-sm.text-lg.font-medium.rounded-md.text-white.bg-pink-600(
+    type='button' 
+    class='hover_bg-pink-700 focus_outline-none focus_ring-2 focus_ring-offset-2 focus_ring-pink-500')&attributes(attributes)
+    block
+
+

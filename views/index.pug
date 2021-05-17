@@ -1,0 +1,19 @@
+extends _layout
+block body
+  .max-w-7xl.mx-auto.px-2.py-4(class='sm_px-6 lg_px-8')
+    .sm_text-center.lg_text-left
+      h1.text-4xl.tracking-tight.font-extrabold.text-gray-900.dark_text-white(class='sm_text-5xl md_text-6xl')
+        span.block(class='xl_inline') Pug mixins from 
+        // space
+        span.block.text-indigo-600(class='xl_inline') Tailwind CSS
+      p.mt-3.text-base.text-gray-500(class='sm_mt-5 sm_text-lg sm_max-w-xl sm_mx-auto md_mt-5 md_text-xl lg_mx-0')
+        | A large collection of useful <a href="https://pugjs.org" class="hover_text-indigo-800 text-gray-900">Pug</a> mixins based on <a href="https://tailwindcss.com" class="hover_text-indigo-800 text-indigo-900">Tailwind CSS</a> to prototype quick and beautiful user interfaces in Express.js and Node.js applications.
+      .mt-5(class='sm_mt-8 sm_flex sm_justify-center lg_justify-start')
+        .rounded-md.shadow
+          a.w-full.flex.items-center.justify-center.px-8.py-3.border.border-transparent.text-base.font-medium.rounded-md.text-white.bg-indigo-600(href='#' class='hover_bg-indigo-700 md_py-4 md_text-lg md_px-10')
+            | Get started
+        .mt-3(class='sm_mt-0 sm_ml-3')
+          a.w-full.flex.items-center.justify-center.px-8.py-3.border.border-transparent.text-base.font-medium.rounded-md.text-indigo-700.bg-indigo-100(href='#' class='hover_bg-indigo-200 md_py-4 md_text-lg md_px-10')
+            | Live demo
+
+      

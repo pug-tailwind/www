@@ -1,0 +1,15 @@
+.flex-1.flex.items-center.justify-center(class='sm_items-stretch sm_justify-start')
+  .flex-shrink-0.flex.items-center
+    img.block.h-8.w-auto(class='lg_hidden' src='https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg' alt='Workflow')
+    img.hidden.h-8.w-auto(class='lg_block' src='https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg' alt='Workflow')
+  .hidden(class='sm_block sm_ml-6')
+    .flex.space-x-4
+      +nav-link('#','#', 'blue') Dashboard
+      +nav-link('#','', 'blue') Team
+      +nav-link('#','', 'blue') Projects
+      +nav-link('#','', 'blue') Calendar
+.absolute.inset-y-0.right-0.flex.items-center.pr-2(class='sm_static sm_inset-auto sm_ml-6 sm_pr-0')
+  button.bg-blue-800.p-1.rounded-full.text-blue-400(class='hover_text-white focus_outline-none focus_ring-2 focus_ring-offset-2 focus_ring-offset-blue-800 focus_ring-white')
+    span.sr-only View notifications
+    svg.h-6.w-6(xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor' aria-hidden='true')
+      path(stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9')

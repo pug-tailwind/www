@@ -1,0 +1,21 @@
+extends _layout
+include tailwind/_mixins
+block body
+  .max-w-7xl.mx-auto.px-2(class='sm_px-6 lg_px-8')
+    h1.text-3xl Navbar
+    +navbar()
+      include _sample-navbar
+    +navbar('red')
+      include _navlinks-red
+    +navbar('yellow')
+      include _navlinks-yellow
+    +navbar('green')
+      include _navlinks-green
+    +navbar('blue')
+      include _navlinks-blue
+    +navbar('indigo')
+      include _navlinks-indigo
+    +navbar('purple')
+      include _navlinks-purple
+    +navbar('pink')
+      include _navlinks-pink

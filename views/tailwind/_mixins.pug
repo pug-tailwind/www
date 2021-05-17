@@ -1,0 +1,106 @@
+include _buttons
+include _navbar
+include _badge
+
+mixin input(label, id, name)
+  label.block.text-sm.font-medium.text-gray-700(for=id) #{label}
+  input.mt-1.block.w-full.shadow-sm.border-gray-300.rounded-md(
+  id=id 
+  type='text' 
+  name=name 
+  autocomplete=name
+  class='focus_ring-indigo-500 focus_border-indigo-500 sm_text-sm')&attributes(attributes)
+
+mixin select(label,id,name)
+  label.block.text-sm.font-medium.text-gray-700(for=id) #{label}
+  select.mt-1.block.w-full.py-2.px-3.border.border-gray-300.bg-white.rounded-md.shadow-sm(
+    id=id 
+    name=name 
+    autocomplete=name 
+    class='focus_outline-none focus_ring-indigo-500 focus_border-indigo-500 sm_text-sm')&attributes(attributes)
+    block
+
+mixin btn-submit()
+  button.inline-flex.justify-center.py-2.px-4.border.border-transparent.shadow-sm.text-sm.font-medium.rounded-md.text-white.bg-indigo-600(
+    type='submit' 
+    class='hover_bg-indigo-700 focus_outline-none focus_ring-2 focus_ring-offset-2 focus_ring-indigo-500')&attributes(attributes)
+    block
+
+//-mixin btn()
+  button.inline-flex.justify-center.py-2.px-4.border.border-transparent.shadow-sm.text-sm.font-medium.rounded-md.text-white.bg-indigo-600(
+    type='button' 
+    class='hover_bg-indigo-700 focus_outline-none focus_ring-2 focus_ring-offset-2 focus_ring-indigo-500')&attributes(attributes)
+    block
+
+mixin btn-reset()
+  button.inline-flex.justify-center.py-2.px-4.border.border-transparent.shadow-sm.text-sm.font-medium.rounded-md.text-white.bg-indigo-600(
+    type='reset' 
+    class='hover_bg-indigo-700 focus_outline-none focus_ring-2 focus_ring-offset-2 focus_ring-indigo-500')&attributes(attributes)
+    block
+
+mixin checkbox(label,id, name)
+  .flex.items-start
+    .flex.items-center.h-5
+      input.h-4.w-4.text-indigo-600.border-gray-300.rounded(id=id name=name type='checkbox' class='focus_ring-indigo-500')&attributes(attributes)
+    .ml-3.text-sm
+      label.font-medium.text-gray-700(for=id) #{label}
+      block
+
+mixin radio(label, id, name)
+  .flex.items-center
+    input.h-4.w-4.text-indigo-600.border-gray-300(id=id name=name type='radio' class='focus_ring-indigo-500')&attributes(attributes)
+    label.ml-3.block.text-sm.font-medium.text-gray-700(for=id)
+      | #{label}
+
+mixin textarea(label,id,name)
+  label.block.text-sm.font-medium.text-gray-700(for=id)
+    | #{label}
+  .mt-1
+    textarea.shadow-sm.mt-1.block.w-full.border-gray-300.rounded-md(
+      id=id 
+      name=name 
+      rows='3' 
+      class='focus_ring-indigo-500 focus_border-indigo-500 sm_text-sm' 
+      placeholder='you@example.com')&attributes(attributes)
+
+ 
+mixin dropdown()
+  div
+    button#user-menu-button.bg-gray-800.flex.text-sm.rounded-full(type='button' class='focus_outline-none focus_ring-2 focus_ring-offset-2 focus_ring-offset-gray-800 focus_ring-white' aria-expanded='false' aria-haspopup='true')
+      span.sr-only Open user menu
+      img.h-8.w-8.rounded-full(src='https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80' alt='')
+  .origin-top-right.absolute.right-0.mt-2.w-48.rounded-md.shadow-lg.py-1.bg-white.ring-1.ring-black.ring-opacity-5(class='focus_outline-none' role='menu' aria-orientation='vertical' aria-labelledby='user-menu-button' tabindex='-1')
+    a#user-menu-item-0.block.px-4.py-2.text-sm.text-gray-700(href='#' role='menuitem' tabindex='-1') Your Profile
+    a#user-menu-item-1.block.px-4.py-2.text-sm.text-gray-700(href='#' role='menuitem' tabindex='-1') Settings
+    a#user-menu-item-2.block.px-4.py-2.text-sm.text-gray-700(href='#' role='menuitem' tabindex='-1') Sign out
+
+mixin thead()
+  thead.bg-gray-50
+    block
+
+mixin tbody()
+  tbody.bg-white.divide-y.divide-gray-200
+    block
+
+mixin table()
+  .flex.flex-col
+    .-my-2.overflow-x-auto(class='sm:-mx-6 lg:-mx-8')
+      .py-2.align-middle.inline-block.min-w-full(class='sm:px-6 lg:px-8')
+        .shadow.overflow-hidden.border-b.border-gray-200(class='sm:rounded-lg')
+          table.min-w-full.divide-y.divide-gray-200
+            block
+
+
+mixin avatar(src, alt)
+  img.h-10.w-10.rounded-full(src=src alt=alt)
+
+mixin user-card(name, email, url)
+  .flex.items-center
+    .flex-shrink-0.h-10.w-10
+      +avatar(url,name)
+    .ml-4
+      .text-sm.font-medium.text-gray-900
+        | #{name}
+      .text-sm.text-gray-500
+        | #{email}
+
