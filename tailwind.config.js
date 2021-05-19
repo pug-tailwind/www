@@ -1,5 +1,10 @@
 module.exports = {
-  purge: ['./views/**/*.pug'],
+  purge: {
+    content: ['./views/**/*.pug'],
+    options: {
+      keyframes: true
+    }
+  },
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {},

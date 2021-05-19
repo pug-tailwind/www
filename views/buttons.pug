@@ -3,122 +3,143 @@ block body
   .max-w-7xl.mx-auto.px-2(class='sm_px-6 lg_px-8')
     h1.order-1.text-gray-900.text-3xl.font-extrabold.tracking-tight.mt-2 Buttons
 
-
-    h2.font-medium.text-gray-900.mt-4 Generic mixins
-    .my-4.mx-4
-      +btn('xs','gray') Gray Button
-      +btn('xs','red') Red Button
-      +btn('5xl','indigo') Red Button
-
-    +prism()
-      | +btn('xs','gray') Gray Button
-      | +btn('xs','red') Red Button
-      | +btn('5xl','indigo') Red Button
-
-    h2.font-medium.text-gray-900.mt-4 Small Buttons
-    .my-4.mx-4
-      +btn-gray()(class="mx-2") Gray button
-      +btn-red()(class="mx-2") Red button
-      +btn-yellow()(class="mx-2") Yellow button
-      +btn-green()(class="mx-2") Green button
-      +btn-blue()(class="mx-2") Blue button
-      +btn-indigo()(class="mx-2") Indigo button
-      +btn-purple()(class="mx-2") Purple button
-      +btn-pink()(class="mx-2") Pink button
+    p.text-xl Normal Buttons
+    .my-4.mx-4.demo
+      +tw-btn-gray() Gray Button
+      +tw-btn-red() Red Button
+      +tw-btn-yellow() Yellow Button
+      +tw-btn-green() Green Button
+      +tw-btn-blue() Blue Button
+      +tw-btn-indigo() Indigo Button
+      +tw-btn-purple() Purple Button
+      +tw-btn-pink() Pink Button
 
     +prism()
-      | +btn-gray()(class="mx-2") Gray button
-      | +btn-red()(class="mx-2") Red button
-      | +btn-yellow()(class="mx-2") Yellow button
-      | +btn-green()(class="mx-2") Green button
-      | +btn-blue()(class="mx-2") Blue button
-      | +btn-indigo()(class="mx-2") Indigo button
-      | +btn-purple()(class="mx-2") Purple button
-      | +btn-pink()(class="mx-2") Pink button
+      | +tw-btn-gray() Gray Button
+      | +tw-btn-red() Red Button
+      | +tw-btn-yellow() Yellow Button
+      | +tw-btn-green() Green Button
+      | +tw-btn-blue() Blue Button
+      | +tw-btn-indigo() Indigo Button
+      | +tw-btn-purple() Purple Button
+      | +tw-btn-pink() Pink Button
+
+    h2.font-medium.text-gray-900.mt-4 Extra-Small Buttons
+    .my-4.mx-4.demo
+      +tw-btn-xs-gray() Gray Button
+      +tw-btn-xs-red() Red Button
+      +tw-btn-xs-yellow() Yellow Button
+      +tw-btn-xs-green() Green Button
+      +tw-btn-xs-blue() Blue Button
+      +tw-btn-xs-indigo() Indigo Button
+      +tw-btn-xs-purple() Purple Button
+      +tw-btn-xs-pink() Pink Button
+
+    +prism()
+      | +tw-btn-xs-gray() Gray Button
+      | +tw-btn-xs-red() Red Button
+      | +tw-btn-xs-yellow() Yellow Button
+      | +tw-btn-xs-green() Green Button
+      | +tw-btn-xs-blue() Blue Button
+      | +tw-btn-xs-indigo() Indigo Button
+      | +tw-btn-xs-purple() Purple Button
+      | +tw-btn-xs-pink() Pink Button
 
     p.text-xl Large Buttons
-    .my-4.mx-4
-      +btn-lg-gray()(class="mx-2") Gray button
-      +btn-lg-red()(class="mx-2") Red button
-      +btn-lg-yellow()(class="mx-2") Yellow button
-      +btn-lg-green()(class="mx-2") Green button
-      +btn-lg-blue()(class="mx-2") Blue button
-      +btn-lg-indigo()(class="mx-2") Indigo button
-      +btn-lg-purple()(class="mx-2") Purple button
-      +btn-lg-pink()(class="mx-2") Pink button
+    .my-4.mx-4.demo
+      +tw-btn-lg-gray() Gray Button
+      +tw-btn-lg-red() Red Button
+      +tw-btn-lg-yellow() Yellow Button
+      +tw-btn-lg-green() Green Button
+      +tw-btn-lg-blue() Blue Button
+      +tw-btn-lg-indigo() Indigo Button
+      +tw-btn-lg-purple() Purple Button
+      +tw-btn-lg-pink() Pink Button
 
     +prism()
-      | +btn-lg-gray()(class="mx-2") Gray button
-      | +btn-lg-red()(class="mx-2") Red button
-      | +btn-lg-yellow()(class="mx-2") Yellow button
-      | +btn-lg-green()(class="mx-2") Green button
-      | +btn-lg-blue()(class="mx-2") Blue button
-      | +btn-lg-indigo()(class="mx-2") Indigo button
-      | +btn-lg-purple()(class="mx-2") Purple button
-      | +btn-lg-pink()(class="mx-2") Pink button
+      | +tw-btn-lg-gray() Gray Button
+      | +tw-btn-lg-red() Red Button
+      | +tw-btn-lg-yellow() Yellow Button
+      | +tw-btn-lg-green() Green Button
+      | +tw-btn-lg-blue() Blue Button
+      | +tw-btn-lg-indigo() Indigo Button
+      | +tw-btn-lg-purple() Purple Button
+      | +tw-btn-lg-pink() Pink Button
 
     p.text-xl Light Buttons
-    .my-4.mx-4
-      .flex.inline-flex
-        +btn-light('sm','gray')(class="mx-2") Gray
-        +btn-light('sm','red')(class="mx-2") Red
-        +btn-light('sm','yellow')(class="mx-2") Yellow
-        +btn-light('sm','green')(class="mx-2") Green
-        +btn-light('sm','blue')(class="mx-2") Blue
-        +btn-light('sm','indigo')(class="mx-2") Indigo
-        +btn-light('sm','purple')(class="mx-2") Purple
-        +btn-light('sm','pink')(class="mx-2") Pink
+    .my-4.mx-4.demo
+      +tw-btn-light-xs-gray() Gray Button
+      +tw-btn-light-xs-red() Red Button
+      +tw-btn-light-xs-yellow() Yellow Button
+      +tw-btn-light-xs-green() Green Button
+      +tw-btn-light-xs-blue() Blue Button
+      +tw-btn-light-xs-indigo() Indigo Button
+      +tw-btn-light-xs-purple() Purple Button
+      +tw-btn-light-xs-pink() Pink Button
 
     +prism()
-      |  +btn-light('sm','gray')(class="mx-2") Gray
-      |  +btn-light('sm','red')(class="mx-2") Red
-      |  +btn-light('sm','yellow')(class="mx-2") Yellow
-      |  +btn-light('sm','green')(class="mx-2") Green
-      |  +btn-light('sm','blue')(class="mx-2") Blue
-      |  +btn-light('sm','indigo')(class="mx-2") Indigo
-      |  +btn-light('sm','purple')(class="mx-2") Purple
-      |  +btn-light('sm','pink')(class="mx-2") Pink
+      | +tw-btn-light-xs-gray() Gray Button
+      | +tw-btn-light-xs-red() Red Button
+      | +tw-btn-light-xs-yellow() Yellow Button
+      | +tw-btn-light-xs-green() Green Button
+      | +tw-btn-light-xs-blue() Blue Button
+      | +tw-btn-light-xs-indigo() Indigo Button
+      | +tw-btn-light-xs-purple() Purple Button
+      | +tw-btn-light-xs-pink() Pink Button
 
-    p.text-xl Outline Buttons
-    .my-4.mx-4
-      .flex.inline-flex
-        +btn-outline('sm','gray')(class="mx-2") Gray
-        +btn-outline('sm','red')(class="mx-2") Red
-        +btn-outline('sm','yellow')(class="mx-2") Yellow
-        +btn-outline('sm','green')(class="mx-2") Green
-        +btn-outline('sm','blue')(class="mx-2") Blue
-        +btn-outline('sm','indigo')(class="mx-2") Indigo
-        +btn-outline('sm','purple')(class="mx-2") Purple
-        +btn-outline('sm','pink')(class="mx-2") Pink
 
-    +prism()
-      |  +btn-outline('sm','gray')(class="mx-2") Gray
-      |  +btn-outline('sm','red')(class="mx-2") Red
-      |  +btn-outline('sm','yellow')(class="mx-2") Yellow
-      |  +btn-outline('sm','green')(class="mx-2") Green
-      |  +btn-outline('sm','blue')(class="mx-2") Blue
-      |  +btn-outline('sm','indigo')(class="mx-2") Indigo
-      |  +btn-outline('sm','purple')(class="mx-2") Purple
-      |  +btn-outline('sm','pink')(class="mx-2") Pink
 
     p.text-xl Round Buttons
-    .my-4.mx-4
-      .flex.inline-flex
-        +btn-round('sm','gray')(class="mx-2") Gray
-        +btn-round('sm','red')(class="mx-2") Red
-        +btn-round('sm','yellow')(class="mx-2") Yellow
-        +btn-round('sm','green')(class="mx-2") Green
-        +btn-round('sm','blue')(class="mx-2") Blue
-        +btn-round('sm','indigo')(class="mx-2") Indigo
-        +btn-round('sm','purple')(class="mx-2") Purple
-        +btn-round('sm','pink')(class="mx-2") Pink
+    .my-4.mx-4.demo
+      +tw-btn-round-xs-gray() Gray Button
+      +tw-btn-round-xs-red() Red Button
+      +tw-btn-round-xs-yellow() Yellow Button
+      +tw-btn-round-xs-green() Green Button
+      +tw-btn-round-xs-blue() Blue Button
+      +tw-btn-round-xs-indigo() Indigo Button
+      +tw-btn-round-xs-purple() Purple Button
+      +tw-btn-round-xs-pink() Pink Button
 
     +prism()
-      |  +btn-round('sm','gray')(class="mx-2") Gray
-      |  +btn-round('sm','red')(class="mx-2") Red
-      |  +btn-round('sm','yellow')(class="mx-2") Yellow
-      |  +btn-round('sm','green')(class="mx-2") Green
-      |  +btn-round('sm','blue')(class="mx-2") Blue
-      |  +btn-round('sm','indigo')(class="mx-2") Indigo
-      |  +btn-round('sm','purple')(class="mx-2") Purple
-      |  +btn-round('sm','pink')(class="mx-2") Pink
+      | +tw-btn-round-xs-gray() Gray Button
+      | +tw-btn-round-xs-red() Red Button
+      | +tw-btn-round-xs-yellow() Yellow Button
+      | +tw-btn-round-xs-green() Green Button
+      | +tw-btn-round-xs-blue() Blue Button
+      | +tw-btn-round-xs-indigo() Indigo Button
+      | +tw-btn-round-xs-purple() Purple Button
+      | +tw-btn-round-xs-pink() Pink Button
+
+    p.text-xl Outline Buttons - xs
+    .my-4.mx-4.demo
+      +tw-btn-outline-xs-gray() Gray Button
+      +tw-btn-outline-xs-red() Red Button
+      +tw-btn-outline-xs-yellow() Yellow Button
+      +tw-btn-outline-xs-green() Green Button
+      +tw-btn-outline-xs-blue() Blue Button
+      +tw-btn-outline-xs-indigo() Indigo Button
+      +tw-btn-outline-xs-purple() Purple Button
+      +tw-btn-outline-xs-pink() Pink Button
+
+    +prism()
+      | +tw-btn-outline-xs-gray() Gray Button
+      | +tw-btn-outline-xs-red() Red Button
+      | +tw-btn-outline-xs-yellow() Yellow Button
+      | +tw-btn-outline-xs-green() Green Button
+      | +tw-btn-outline-xs-blue() Blue Button
+      | +tw-btn-outline-xs-indigo() Indigo Button
+      | +tw-btn-outline-xs-purple() Purple Button
+      | +tw-btn-outline-xs-pink() Pink Button
+
+    p Similarly you have mixins for various other sizes and colors.
+
+    +prism()
+      | +tw-btn-outline-sm-gray() Gray Button
+      | +tw-btn-outline-red() Red Button
+      | +tw-btn-outline-lg-yellow() Yellow Button
+      | +tw-btn-outline-xl-green() Green Button
+      | +tw-btn-outline-2xl-blue() Blue Button
+      | +tw-btn-outline-3xl-indigo() Indigo Button
+      | +tw-btn-outline-4xl-purple() Purple Button
+      | +tw-btn-outline-5xl-pink() Pink Button
+

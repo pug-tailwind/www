@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.demo button {
+  margin-left: 2px;
+  margin-right: 2px;
+}
